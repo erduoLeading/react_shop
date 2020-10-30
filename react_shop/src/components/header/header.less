@@ -1,0 +1,48 @@
+.header{
+  height:90px;
+  background-color:#fff;
+  line-height: 45px;
+  .header-top{
+    text-align:right;
+    border-bottom:1px solid #1890ff;
+    button{
+      margin-right:30px;
+      margin-left:20px;
+    }
+  }
+  .header-bottom{
+    display: flex;
+    .header-bottom-left{
+      position: relative;
+      flex:1;
+      text-align: center;
+      font-size:18px;
+      &::after{
+        content:'';
+        position: absolute;
+        left:0;
+        right:0;
+        top:75%;
+        width:0;
+        height:0;
+        margin:auto;
+        border-width:20px;
+        border-color:#fff transparent green;
+        border-style:solid;
+        border-bottom:none;
+      }
+    }
+    .header-bottom-right{
+      flex:3;
+      text-align: right;
+      margin-right: 30px;
+      img{
+        width:30px;
+        height:20px;
+      }
+      span{
+        padding:0 10px
+      }
+    }
+  }
+}
